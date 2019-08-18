@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head는 문서 관련 설명(정보) -->
+  <head>
+  <!-- data에 대한 data = metadata -->
+    <meta charset="UTF-8">
+    <!-- viewport는 화면 크기(디스플레이 별) width=device-width는 가로를 device에 맞게, initail-scale은 몇 배로 보여줄지 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {background-color: black;}
+    span {background-color: red;}
+    </style>
+  </head>
+  <!-- body는 본문 -->
+  <body>
+    <!-- 1. inline-선(css속성) -->
+    <!-- 엔터가 무의미함(옆에 이어진다), 세로 공간 없음 기본 폰트 사이즈만 있을뿐 -->
+    <!-- 따라서 border, padding, margin이 있을 수 없다(선이니까 줄수 없음) -->
+    <!-- element width == content의 가로폭 -->
+    Hi this is <span>SSAFY</span> EXTRA class <!-- span은 그 자체로는 의미가 없으나 특정 부분만 스타일을 추가하고 싶을때 사용함 --> 
+    <a href="url">content</a>  <!-- a 태그는 href 안에 url들어감/ href는 attribute, ""는 attribute value, 뒤에는 content -->
+    <img src="url" alt="description"> <!-- alt는 이미지가 무엇인지에 관한 설명을 적어야함, 이미지가 읽히지 않을 때 alt 내용으로 알 수 있음 -->
+    <input type="text">
+    <select name="" id=""><option value=""></option></select> <!-- select는 option태그와 한쌍-->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <!-- 2. block(css속성); box애들-->
+    <!-- 밑에 붙음(새 줄에서 시작됨), margin, border, padding 있음 -->
+    <!-- element width == 부모 element의 가로폭 전체 -->
+    <div>HTML4까지는 오직 div만 있었음 HTML5로 오면서 6개의 semantic이 추가됨</div>
+    <!-- CSS적으로는 div, nav, header, aside, section, article, footer이 다르지 않으나, html에서 의미 차이 생김 -->
+    <nav></nav>
+    <header></header>
+    <aside></aside>
+    <section></section>
+    <article></article>
+    <footer></footer>
+
+    <ul>
+      <li></li>
+    </ul>
+    <form action="">
+      <input type="text">
+      <select name="" id=""></select>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+    <h1><h2><h3></h3></h2></h1>
+    <p>문단태그 paragraph</p>
+
+  </body>
+</html>

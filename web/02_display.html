@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {}
+        div {
+            width: 200px;
+            height: 200px;
+            border: black solid 1px;
+        }
+        #some_id {}
+        .parent {
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            display: inline-block;
+        }
+        /* .parent 는 selector, width는 property, 150px은 property value 라고 읽는다 */
+        /* ★★★ 셀렉터 ★★★ */
+        
+        .child {
+            /* child의 content는 100 x 100 */
+            width: 100px;
+            height: 100px;
+            background: cornflowerblue;
+        }
+        .ib {
+            display: inline-block;
+            /* width 와 height는 content 관련 내용 */
+            width: 150px;
+            height: 150px;
+            position: relative;
+            /* ★★★ static, relative, absolute, fixed ★★★ */
+       }
+    </style>
+    <link rel="stylesheet" href="url">
+
+</head>
+<body>
+<!-- inline, block, inline-block -->
+<div class="parent">
+    parent
+<div class="ib">dd</div>
+    <div class="child">
+        child
+    </div>
+</div>
+
+<div>
+<!-- 예시) 컴퓨터, 키보드=content, 책상=padding, 책상 테두리=border, 바닥에서부터의 책상거리=margin -->
+<!-- border, padding, margin 관련 언급이 없으면 0이 디폴트 값 -->
+<!-- border에서 1px을 줄 땐 1로 되는 것을 잊지말자!(착각노노) -->
+<!-- margin은 border기준으로 밀어내는 것 -->
+</div>
+</body>
+</html>
